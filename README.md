@@ -11,16 +11,18 @@ L’augmentation de la consommation énergétique et la nécessité de réduire 
 Ce projet propose une alternative économique et automatisée permettant une mesure efficace et accessible.
 
 ## 🛠️ Matériel Utilisé
+![Schéma](./images/montage.png)
+- **Alimentation 12v** : Pour alimenter l'appareil
+-  **Stepdown** : Pour avoir un alimentation de 9V pour l'esp32
 - **ESP32** : Microcontrôleur pour le traitement des données
-- **Capteurs de pression et de température** : Suivi des conditions du digesteur
-- **Electrovannes et pompes** : Régulation des flux gazeux
-- **Débitmètre à gaz** : Mesure précise du débit de biogaz
-- **Modules de communication WiFi/Bluetooth** : Transmission des données en temps réel
-- **Logiciel d’analyse des données** : Affichage et stockage des mesures sur une interface web
-- **Batterie rechargeable** : Alimentation autonome pour une utilisation prolongée
+- **Stepup** : Pour avoir une alimentation de 12 pour l'electrovane
+- **Capteur de charge et HX711** : Mesure la quantiter déplacer
+- **Relais**
+- **Electrovanne** : Régulation des flux gazeux
+- **Pompe à eau** : Régulation de flux d'eaux
 
 ## ⚙️ Schéma de Principe
-![Schéma](path_to_schema_image.png)
+![Schéma](./images/principe.png)
 
 Le système fonctionne sur le principe de la **mesure de volume de gaz par déplacement de liquide** ou par capteurs de pression, assurant une précision et une répétabilité des mesures.
 
@@ -47,7 +49,7 @@ Le système fonctionne sur le principe de la **mesure de volume de gaz par dépl
 
 ## 🔬 Résultats Expérimentaux
 ### Courbes de Production de Biogaz
-![Graphique](path_to_graph_image.png)
+![Graphique](./images/curve.png)
 
 ### Comparaison avec un Système Manuel
 | Paramètre | Système Automatisé | Système Manuel |
@@ -63,17 +65,10 @@ Le système fonctionne sur le principe de la **mesure de volume de gaz par dépl
 - **Ajout de capteurs supplémentaires** pour surveiller d’autres gaz (CO2, H2S, O2).
 - **Développement d’une version industrielle** pour des applications à grande échelle.
 
-## 📝 Installation et Utilisation
-1. **Cloner le dépôt** :
-   ```bash
-   git clone https://github.com/votre-repo/mesure-gaz-bio.git
-   ```
-2. **Uploader le code sur l'ESP32** via l'IDE Arduino.
-3. **Configurer les capteurs et les paramètres**.
-4. **Démarrer le système** et suivre les mesures en temps réel via l’interface web.
+## 📝 Arborescence des fichiers
+- Les codes de l'esp32 est disponible dans : **esp32_code/gaz_measure.ino**
+- Les codes de l'interface utilisateur et du serveur sont disponibles dans : **Interface_&_server**
+- le pdf complet du projet est disponible via une demande et requête à l'adresse mail suivante : [ing.emmanuela@gmail.com]
 
 ## 🧑‍🔬 Auteur
-**Narindranjananahary Emmanuela** - [LinkedIn](https://linkedin.com/in/your-profile)
-
-## 🚀 Licence
-Ce projet est sous licence **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**, permettant le partage et l’amélioration du contenu tant que l’attribution est respectée.
+**Narindranjananahary Emmanuela** - [linkedin.com/in/emmanuela-narindranjanahary-7194272a7](www.linkedin.com/in/emmanuela-narindranjanahary-7194272a7)
