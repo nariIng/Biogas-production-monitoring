@@ -15,7 +15,7 @@ Ce projet propose une alternative économique et automatisée permettant une mes
 - **Alimentation 12v** : Pour alimenter l'appareil
 -  **Stepdown** : Pour avoir un alimentation de 9V pour l'esp32
 - **ESP32** : Microcontrôleur pour le traitement des données
-- **Stepup** : Pour avoir une alimentation de 12 pour l'electrovane
+- **Stepup** : Pour avoir une alimentation de 24V pour l'electrovane
 - **Capteur de charge et HX711** : Mesure la quantiter déplacer
 - **Relais**
 - **Electrovanne** : Régulation des flux gazeux
