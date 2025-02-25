@@ -1,4 +1,4 @@
-# 🌱 Système Automatique de Mesure de Volume de Gaz par Digestion Anaérobie
+# 🌱 Système Automatique de Mesure de Débit et de Volume de Gaz lors d'une Digestion Anaérobique
 
 [![Status](https://img.shields.io/badge/status-active-brightgreen.svg)]()
 [![Platform](https://img.shields.io/badge/platform-ESP32-blue.svg)]()
